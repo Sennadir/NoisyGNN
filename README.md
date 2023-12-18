@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains python codes and datasets necessary to run the proposed NoisyGNN approach. NoisyGNN is a defense approach designed to defend GNNs while mainting a low complexity in term of time and operations. The main idea of the paper consists of injecting noise during training in the hidden representations. Please refer to our paper for additional specifications.
+This repository contains python codes and datasets necessary to run the proposed NoisyGNN approach. NoisyGNN is a defense approach designed to defend GNNs while maintaining a low complexity in term of time and operations. The main idea of the paper consists of injecting noise during training in the hidden representations. Please refer to our paper for additional specifications.
 
 
 ## Requirements
@@ -13,7 +13,7 @@ Code is written in Python 3.6 and requires:
 - NetworkX
 
 ## Datasets
-For node classifiation, the used datasets are as follows:
+For node classification, the used datasets are as follows:
 - Cora
 - CiteSeer
 - PubMed
@@ -34,10 +34,20 @@ To train and evaluate the model in the paper, the user should specify the follow
 - hidden_dimension: The hidden dimension used in the model (if desired, otherwise default will be used)
 - learning rate and epochs
 - Budget: The budget of the attack
-- beta_max/beta_min: the range of the hyperparameter related to the noise ratio injected into the underlying GNN (refered to in the paper as \beta).
+- beta_max/beta_min: the range of the hyper-parameters related to the noise ratio injected into the underlying GNN (referred to in the paper as \beta).
 
 To run a normal code of NoisyGCN with the Mettack approach using the Cora dataset and using the default parameters for a 10% budget:
 
 ```bash
 python main_mettack.py --dataset cora --ptb_rate 0.1
 ```
+
+## Citing
+
+If you find our proposed NoisyGNN useful for your research, please consider citing our paper.
+
+For any additional questions/suggestions you might have about the code and/or the proposed approach to <ennadir@kth.se>.
+
+## License
+
+NoisyGNN is licensed under the MIT License.
